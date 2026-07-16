@@ -23,12 +23,11 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative flex h-screen items-center justify-center overflow-hidden">
+    <section className="relative py-20 flex h-screen items-center justify-center overflow-hidden">
       {/* Animated Gradient Background */}
-      <div className="absolute inset-0 -z-20">
-        <div className="absolute inset-0 bg-dark" />
-        <div className="absolute inset-0 bg-linear-to-r from-brand-purple via-brand-blue to-accent opacity-20 animate-gradient-anim bg-size-[200%_200%]" />
-        <div className="absolute inset-0 bg-[url('/noise-texture.png')] opacity-10 mix-blend-soft-light" />
+      <div className="absolute inset-0 -z-20 bg-white">
+        <div className="absolute inset-0 bg-white animate-gradient-anim" />
+        <div className="absolute inset-0 bg-[url('/noise-texture.png')] opacity-5 mix-blend-overlay" />
       </div>
 
       <motion.div
@@ -37,20 +36,20 @@ const HeroSection = () => {
         initial="hidden"
         animate="visible"
       >
-        <motion.h1 className="text-h1 text-white" variants={itemVariants}>
+        <motion.h1 className="text-2xl font-bold md:text-5xl lg:text-h1 text-foreground" variants={itemVariants}>
           Delivering More Than Packages.
           <br />
-          <span className="bg-linear-to-r from-brand-blue to-accent bg-clip-text text-transparent">
+          <span className="text-[#3BA1FE]">
             Delivering Confidence.
           </span>
         </motion.h1>
-        <motion.p className="mt-6 max-w-3xl mx-auto text-body text-white/80" variants={itemVariants}>
-          Technology-driven logistics solutions designed for individuals and businesses. Schedule pickups, track shipments in real time, and shop premium supplies—all from one platform.
+        <motion.p className="mt-3 p-2 max-w-3xl mx-auto font-medium text-body text-foreground/80" variants={itemVariants}>
+          Technology-driven logistics solutions designed for individuals and businesses. Schedule pickups, track shipments in real time, and shop premium supplies all from one platform.
         </motion.p>
         <motion.div className="mt-10 flex flex-wrap justify-center gap-4" variants={itemVariants}>
           <Button size="lg">Schedule Pickup <ArrowRight className="ml-2 h-5 w-5" /></Button>
           <Button variant="secondary" size="lg">Track Shipment</Button>
-          <Button variant="ghost" size="lg" className="text-white"><PlayCircle className="mr-2 h-5 w-5" /> Watch Demo</Button>
+          <Button variant="ghost" size="lg"><PlayCircle className="mr-2 h-5 w-5" /> Watch Demo</Button>
         </motion.div>
       </motion.div>
     </section>

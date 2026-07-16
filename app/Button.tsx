@@ -8,9 +8,9 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-gradient-to-r from-brand-purple to-brand-blue text-white",
-        secondary: "bg-dark/50 border border-white/10 backdrop-blur-sm text-white",
-        ghost: "hover:bg-accent/10 hover:text-accent-foreground",
+        default: "bg-[#15123A] text-white",
+        secondary: "bg-background border border-foreground/10 backdrop-blur-sm text-foreground",
+        ghost: "hover:bg-accent/10 text-foreground",
       },
       size: {
         default: "h-12 px-8 py-3",

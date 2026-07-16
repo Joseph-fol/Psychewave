@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Manrope } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { cn } from "./utils";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 
-const outfit = Outfit({
+const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-outfit",
+  variable: "--font-manrope",
 });
 
 export const metadata: Metadata = {
-  title: "PsycheWave - The Future of Logistics",
+  title: "PsycheWave - Logistic | Tech | Bookstore",
   description:
     "Technology-driven logistics solutions for individuals and businesses.",
 };
@@ -24,10 +24,15 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background font-sans antialiased", outfit.variable)}>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased flex flex-col",
+          manrope.variable
+        )}
+      >
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pt-20">{children}</main>
         <Footer />
       </body>
     </html>
