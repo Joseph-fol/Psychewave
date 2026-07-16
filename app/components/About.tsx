@@ -22,7 +22,7 @@ export default function About() {
             </p>
           </div>
 
-          {/* Right Column: Image */}
+          
           <div className="relative h-112.5 w-full">
             <div className="w-full h-full bg-gray-100 rounded-xl flex items-center justify-center">
                 <span className="text-gray-400 text-lg">Image of a person dispatching</span>
