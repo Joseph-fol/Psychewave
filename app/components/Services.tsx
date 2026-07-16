@@ -90,10 +90,7 @@ export default function Services() {
                   {item.description}
                 </p>
 
-                <a
-                  href="#"
-                  className="font-bold text-[#3BA1FE] hover:underline mt-auto"
-                >
+                <a href="#" className="font-bold text-[#3BA1FE] hover:underline mt-auto" >
                   {item.cta} <span aria-hidden="true">&rarr;</span>
                 </a>
               </motion.div>
