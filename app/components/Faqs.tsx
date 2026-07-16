@@ -15,7 +15,7 @@ export default function Faqs() {
                         aria-expanded="true"
                         aria-controls="collapseOne"
                     >
-                        Accordion Item #1
+                        What is Psychewave?
                     </button>
                 </h2>
                 <div
